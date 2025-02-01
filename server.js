@@ -23,8 +23,8 @@ app.get("/", async (req, res) => {
 
 app.get("/fruits", async (req, res) => {
     const allFruits = await Fruit.find({});
-    console.log(allFruits); // log the fruits!
-    res.render('fruits/index.ejs',{fruits:allFruits})
+    // console.log(allFruits); log the fruits!
+    res.render('fruits/index.ejs',{fruits: allFruits})
 });
 
 //create fruit
